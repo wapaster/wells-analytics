@@ -1,0 +1,35 @@
+# ascii dump of database
+
+# AlertValue
+Manager/User	ElementName	TypeName	DetailNr	_alert_hdl.._type	_alert_hdl.._l_limit	_alert_hdl.._u_limit	_alert_hdl.._l_incl	_alert_hdl.._u_incl	_alert_hdl.._panel	_alert_hdl.._panel_param	_alert_hdl.._help	_alert_hdl.._min_prio	_alert_hdl.._class	_alert_hdl.._text	_alert_hdl.._active	_alert_hdl.._orig_hdl	_alert_hdl.._ok_range	_alert_hdl.._hyst_type	_alert_hdl.._hyst_time	_alert_hdl.._multi_instance	_alert_hdl.._l_hyst_limit	_alert_hdl.._u_hyst_limit	_alert_hdl.._text1	_alert_hdl.._text0	_alert_hdl.._ack_has_prio	_alert_hdl.._order	_alert_hdl.._dp_pattern	_alert_hdl.._dp_list	_alert_hdl.._prio_pattern	_alert_hdl.._abbr_pattern	_alert_hdl.._ack_deletes	_alert_hdl.._non_ack	_alert_hdl.._came_ack	_alert_hdl.._pair_ack	_alert_hdl.._both_ack	_alert_hdl.._impulse	_alert_hdl.._filter_threshold	_alert_hdl.._went_text	_alert_hdl.._add_text	_alert_hdl.._status64_pattern	_alert_hdl.._neg	_alert_hdl.._status64_match	_alert_hdl.._match	_alert_hdl.._set
+ASC (1)/0	sh-23.ALARM_SSK	WELLS		13					""		lt:1 LANG:10027 ""	\0			1	1				0																0								
+ASC (1)/0	sh-23.ALARM_SSK	WELLS	1	5									 	lt:1 LANG:10027 ""				0	01.01.1970 00:00:00.000																			lt:1 LANG:10027 ""	 	0x0	0	""	"*"	
+ASC (1)/0	sh-23.ALARM_SSK	WELLS	2	5									alert.	lt:1 LANG:10027 "СХ-11 Авария ССК Угол наклона"				0	01.01.1970 00:00:00.000																			lt:1 LANG:10027 ""	 	0x0	0	""	"1"	
+ASC (1)/0	sh-23.ALARM_SSK	WELLS	3	5									alert.	lt:1 LANG:10027 "СХ-11 Авария ССК Среднекв. Ускорен."				0	01.01.1970 00:00:00.000																			lt:1 LANG:10027 ""	 	0x0	0	""	"2"	
+ASC (1)/0	sh-23.ALARM_SSK	WELLS	4	5									alert.	lt:1 LANG:10027 "СХ-11 Авария ССК амплитуда вибр."				0	01.01.1970 00:00:00.000																			lt:1 LANG:10027 ""	 	0x0	0	""	"3"	
+ASC (1)/0	sh-23.ALARM_SSK	WELLS	5	5									alert.	lt:1 LANG:10027 "СХ-11 Авария ССК вибр. скорость"				0	01.01.1970 00:00:00.000																			lt:1 LANG:10027 ""	 	0x0	0	""	"4"	
+ASC (1)/0	sh-23.WARNING_SSK	WELLS		13					""		lt:1 LANG:10027 ""	\0			1	1				0																0								
+ASC (1)/0	sh-23.WARNING_SSK	WELLS	1	5									 	lt:1 LANG:10027 ""				0	01.01.1970 00:00:00.000																			lt:1 LANG:10027 ""	 	0x0	0	""	"*"	
+ASC (1)/0	sh-23.WARNING_SSK	WELLS	2	5									warning.	lt:1 LANG:10027 "СХ-11 Предупреждение ССК Угол наклона"				0	01.01.1970 00:00:00.000																			lt:1 LANG:10027 ""	 	0x0	0	""	"1"	
+ASC (1)/0	sh-23.WARNING_SSK	WELLS	3	5									warning.	lt:1 LANG:10027 "СХ-11 Предупреждение ССК среднекв. ускорен."				0	01.01.1970 00:00:00.000																			lt:1 LANG:10027 ""	 	0x0	0	""	"2"	
+ASC (1)/0	sh-23.WARNING_SSK	WELLS	4	5									warning.	lt:1 LANG:10027 "СХ-11 Предупреждение ССК амплитуда вибр. "				0	01.01.1970 00:00:00.000																			lt:1 LANG:10027 ""	 	0x0	0	""	"3"	
+ASC (1)/0	sh-23.WARNING_SSK	WELLS	5	5									warning.	lt:1 LANG:10027 "СХ-11 Предупреждение ССК вибр. скорость"				0	01.01.1970 00:00:00.000																			lt:1 LANG:10027 ""	 	0x0	0	""	"4"	
+ASC (1)/0	sh-23.ALARM_TMS	WELLS		13					""		lt:1 LANG:10027 ""	\0			1	1				0																0								
+ASC (1)/0	sh-23.ALARM_TMS	WELLS	1	5									 	lt:1 LANG:10027 ""				0	01.01.1970 00:00:00.000																			lt:1 LANG:10027 ""	 	0x0	0	""	"*"	
+ASC (1)/0	sh-23.ALARM_TMS	WELLS	2	5									alert.	lt:1 LANG:10027 "СХ-11 Авария ТМС нет сигнала"				0	01.01.1970 00:00:00.000																			lt:1 LANG:10027 ""	 	0x0	0	""	"1"	
+ASC (1)/0	sh-23.ALARM_TMS	WELLS	3	5									alert.	lt:1 LANG:10027 "СХ-11 Авария ТМС плохой сигнал"				0	01.01.1970 00:00:00.000																			lt:1 LANG:10027 ""	 	0x0	0	""	"2"	
+ASC (1)/0	sh-23.ALARM_TMS	WELLS	4	5									alert.	lt:1 LANG:10027 "СХ-11 Авария ТМС обрыв"				0	01.01.1970 00:00:00.000																			lt:1 LANG:10027 ""	 	0x0	0	""	"3"	
+ASC (1)/0	sh-23.ALARM_TMS	WELLS	5	5									alert.	lt:1 LANG:10027 "СХ-11 Авария ТМС замыкание"				0	01.01.1970 00:00:00.000																			lt:1 LANG:10027 ""	 	0x0	0	""	"4"	
+ASC (1)/0	sh-23.ALARM_TMS	WELLS	6	5									advanceAlarm.	lt:1 LANG:10027 "СХ-11 Авария ТМС нет датчка"				0	01.01.1970 00:00:00.000																			lt:1 LANG:10027 ""	 	0x0	0	""	"5"	
+ASC (1)/0	sh-23.LOAD_MAX_ALARM	WELLS		12					""		lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 "Нагрузка выс. аварийное значение"	lt:1 LANG:10027 "Норма"												0								
+ASC (1)/0	sh-23.LOAD_MIN_ALARM	WELLS		12					""		lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 "Нагрузка мин. аварийное значение"	lt:1 LANG:10027 "Норма"												0								
+ASC (1)/0	sh-23.SSK_ALARM	WELLS		12					""		lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 "ССК аварийное значение"	lt:1 LANG:10027 "Норма"												0								
+ASC (1)/0	sh-23.SSK_WARNING	WELLS		12					""		lt:1 LANG:10027 ""	\0	warning.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 "ССК предупредительное значение"	lt:1 LANG:10027 "Норма"												0								
+ASC (1)/0	sh-23.TIT_HH_alarm	WELLS		12					""		lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 "Верхний аварийный предел датчика темп."	lt:1 LANG:10027 "Норма"												0								
+ASC (1)/0	sh-23.TIT_H_alarm	WELLS		12					""		lt:1 LANG:10027 ""	\0	warning.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 "Верхний предупредительный предел датчика темп."	lt:1 LANG:10027 "Норма"												0								
+ASC (1)/0	sh-23.TIT_L_alarm	WELLS		12					""		lt:1 LANG:10027 ""	\0	warning.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 "Нижний предупредительный предел датчика темп."	lt:1 LANG:10027 "Норма"												0								
+ASC (1)/0	sh-23.TIT_LL_alarm	WELLS		12					""		lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 "Нижний аварийный предел датчика темп."	lt:1 LANG:10027 "Норма"												0								
+ASC (1)/0	sh-23.PIT_HH_alarm	WELLS		12					""		lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 "Верхний аварийный предел датчика давл."	lt:1 LANG:10027 "Норма"												0								
+ASC (1)/0	sh-23.PIT_H_alarm	WELLS		12					""		lt:1 LANG:10027 ""	\0	warning.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 "Верхний предупредительный предел датчика давл."	lt:1 LANG:10027 "Норма"												0								
+ASC (1)/0	sh-23.PIT_L_alarm	WELLS		12					""		lt:1 LANG:10027 ""	\0	warning.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 "Нижний предупредительный предел датчика давл."	lt:1 LANG:10027 "Норма"												0								
+ASC (1)/0	sh-23.PIT_LL_alarm	WELLS		12					""		lt:1 LANG:10027 ""	\0	alert.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:1 LANG:10027 "Нижний аварийный предел датчика давл."	lt:1 LANG:10027 "Норма"												0								

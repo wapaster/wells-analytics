@@ -1,0 +1,59 @@
+ms = sst.executeQuery("SELECT jidkPredDnya, jidkDenNakl, neftPredDnya, neftDenNakl FROM hourdata where time='010000' and mr = 'Акшабулак' order by data desc limit 1");
+        if (ms.next() != false) {
+            aksh_curJidk = ms.getDouble("jidkDenNakl") + ms.getDouble("jidkPredDnya");
+            aksh_curNeft = ms.getDouble("neftDenNakl") + ms.getDouble("neftPredDnya");
+        }
+		
+		
+ss = sst.executeQuery("SELECT * FROM matrixData where mr = 'Акшабулак'");
+        while(ss.next()) {
+            aksh_tehJidk += ss.getDouble("tehJidk");
+            aksh_tehNeft += ss.getDouble("tehNeft");
+        }
+
+
+ss = sst.executeQuery("SELECT * FROM matrixData where mr = 'Аксай'");
+        while(ss.next()) {
+            double thJidk = ss.getDouble("tehJidk");
+            double thNeft = ss.getDouble("tehNeft");
+            double gas = ss.getDouble("gas");
+            double neft = (100 - ss.getDouble("obv_fact")) * ss.getDouble("zamerTM") / 100; 
+                    
+            st.executeUpdate("insert into balansdata (pu, mr, skv, mesyac, den, zamer, tehRejJidk, rvsDobycha, neftSdacha, "
+                + "tehRejNeft, neftDobycha, gas) values ('Казгермунай', 'Аксай', '"  + ss.getString("skv") + "', '" + mesyac + "', '" 
+                + den + "', " + ss.getString("zamerTM") + ", " + thJidk + ", " + (thJidk/aks_tehJidk*aks_curJidk) 
+                + ", " + (thNeft/aks_tehNeft*aks_curNeft) + ", " + thNeft + ", " + neft + ", " + gas + ")");
+        }
+		
+		
+--(100 - обводненность фактическая) * замер / 100, это считает neftDobycha для balansdata
+
+--Для AKH:
+for j in range (3, 5):
+	for i in range(1, 15):
+		jidk = str(round(float(str(data["Well_Number_"+str(i)+"_AVQ_Fluid_Manif_" + str(j)][0])), 3))
+		neft = str(data["Well_Number_"+str(i)+"_AVQ_Oil_Manif_" + str(j)][0])
+		gas = str(data["Well_Number_"+str(i)+"_AVQ_Gas_Manif_" + str(j)][0])
+		obv = str(data["Well_Number_"+str(i)+"_AV_Water_Manif_" + str(j)][0])
+		
+--Для AKS:
+for j in range(1, 6):
+    for i in range(1, 15):
+		jidk = str(round(float(str(data["Well_Number_"+str(i)+"_AVQ_Fluid_GZU" + str(j)][0])), 3))
+		neft = str(data["Well_Number_"+str(i)+"_AVQ_Oil_GZU" + str(j)][0])
+		gas = str(data["Well_Number_"+str(i)+"_AVQ_Gas_GZU" + str(j)][0])
+		obv = str(data["Well_Number_"+str(i)+"_AV_Water_GZU" + str(j)][0])
+		
+--Для NUR:
+for i in range(1, 15):
+	jidk = str(round(float(str(data["Well_Number_"+str(i)+"_AVQ_Fluid_DNSSB"][0])), 3))
+	neft = str(data["Well_Number_"+str(i)+"_AVQ_Oil_DNSSB"][0])
+	gas = str(data["Well_Number_" + str(i) + "_AVQ_Gas_DNSSB"][0])
+	obv = str(data["Well_Number_" + str(i) + "_AV_Water_DNSSB"][0])
+		
+Код заполняет matrixData ZamerTM = jidk, neftTM = neft, gas = gas, obv = obv
+
+--Вопросы: 
+-Какой конкретно функционал необходим для переноса?
+-Нужна ли шахматка скважин, если она уже есть на скаде?
+-Если оставляем карточку свкажин, какие данные хотим видеть?
